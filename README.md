@@ -75,3 +75,12 @@ To install, place the binaries in your application bin and add the following con
 * CappedCollectionSize : The size in bytes of the capped collection. (Defaults to '8589934592' = 1Go)
 * CappedCollectionMaxItems : The capped collection max items. (Defaults to 'null')
 * UseFormattedMessage : A value indicating whether to use the default message formating. (Defaults to 'true')
+
+### About this repository
+
+This repository is inspired by :
+* Logrythmik/NLog.MongoDB
+* loresoft/NLog.Mongo
+
+I wrote this repository for optimized the time of logging.
+In the next step I will work on log viewer.
