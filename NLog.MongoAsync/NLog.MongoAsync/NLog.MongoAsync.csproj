@@ -57,10 +57,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ILogRepository.cs" />
+    <Compile Include="ILogRepositoryConfig.cs" />
+    <Compile Include="LogEventInfoExtensions.cs" />
+    <Compile Include="LogRepository.cs" />
     <Compile Include="MongoTarget.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
