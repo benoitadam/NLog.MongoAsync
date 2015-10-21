@@ -66,17 +66,12 @@ To install, place the binaries in your application bin and add the following con
 		</rules>
 	</nlog>
 	
-### Using custom formatting	
-
-TODO
-
 ### Target Settings:
 
-* Host (Defaults to 'localhost')
-* Port (Defaults to 27017)
-* Database(Defaults to 'NLog')
-* Username
-* Password
-* ConnectionString (a complete Mongo Url)
-* ConnectionName (the name configured in the configuration/connectionString node)
-* CollectionName - the name of the Mongo collection. If you don't specify this, it uses the logger name.
+* CollectionName : The name of the Mongo collection. (Defaults to entry assembly name or 'Other' if null)
+* ConnectionString : The connection string name string. (Defaults to 'mongodb://localhost')
+* DatabaseName : The name of the database. (Defaults to 'logs')
+* UseCappedCollection : A value indicating whether to use a capped collection. (Defaults to 'true')
+* CappedCollectionSize : The size in bytes of the capped collection. (Defaults to '8589934592' = 1Go)
+* CappedCollectionMaxItems : The capped collection max items. (Defaults to 'null')
+* UseFormattedMessage : A value indicating whether to use the default message formating. (Defaults to 'true')
